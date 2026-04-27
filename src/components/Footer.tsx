@@ -21,7 +21,7 @@ export const Footer = () => (
         style={{ backgroundColor: "hsl(var(--whatsapp))" }}
       >
         <MessageCircle className="h-4 w-4" fill="currentColor" />
-        (83) 9840-9266
+        (83) 98733-4129
       </a>
       <p className="text-xs text-muted-foreground">
         © {new Date().getFullYear()} Arte Flor Sabonetes. Todos os direitos reservados.
