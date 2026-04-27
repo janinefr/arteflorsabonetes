@@ -5,7 +5,7 @@ import { whatsappLink } from "@/data/products";
 export const Footer = () => (
   <footer className="border-t border-border/60 bg-muted/40">
     <div className="container mx-auto flex flex-col items-center gap-6 px-6 py-12 text-center">
-      <img src={logo} alt="Arte Flor Sabonetes" className="h-24 w-24 object-contain" />
+      <img src={logo} alt="Arte Flor Sabonetes" className="h-20 w-20 rounded-full object-cover" />
       <div className="font-serif text-2xl text-foreground">
         Arte Flor Sabonetes
       </div>

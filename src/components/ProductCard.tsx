@@ -42,10 +42,10 @@ export const ProductCard = ({ product }: Props) => {
           {product.quantity}
         </p>
 
-        <div className="mt-auto flex items-center gap-2">
+        <div className="mt-auto flex flex-col gap-2">
           <Link
             to={href}
-            className="inline-flex flex-1 items-center justify-center rounded-full border border-border px-4 py-2 text-xs font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+            className="inline-flex items-center justify-center rounded-full border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
           >
             Ver detalhes
           </Link>
@@ -53,11 +53,11 @@ export const ProductCard = ({ product }: Props) => {
             href={whatsappLink(message)}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Pedir pelo WhatsApp"
-            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-[hsl(var(--whatsapp-foreground))] transition-transform hover:scale-110"
-            style={{ backgroundColor: "hsl(var(--whatsapp))" }}
+            className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
+            style={{ background: "var(--gradient-primary)" }}
           >
             <MessageCircle className="h-4 w-4" fill="currentColor" />
+            Pedir pelo WhatsApp
           </a>
         </div>
       </div>

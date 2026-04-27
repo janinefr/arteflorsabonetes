@@ -14,7 +14,8 @@ export const Hero = () => (
         <img
           src={logo}
           alt="Arte Flor Sabonetes"
-          className="h-32 w-32 object-contain md:h-40 md:w-40"
+          className="h-24 w-24 rounded-full object-cover shadow-soft md:h-28 md:w-28"
+          style={{ boxShadow: "var(--shadow-soft)" }}
         />
         <h1 className="font-serif text-5xl leading-[1.05] text-foreground md:text-7xl">
           Arte Flor
