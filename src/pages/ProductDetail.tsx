@@ -44,7 +44,7 @@ const ProductDetail = () => {
       <header className="border-b border-border/60 bg-card/60 backdrop-blur">
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Arte Flor Sabonetes" className="h-12 w-12 rounded-full object-cover" />
+            <img src={logo} alt="Arte Flor Sabonetes" className="h-12 w-12 object-contain" />
             <span className="hidden font-serif text-lg text-foreground sm:inline">Arte Flor Sabonetes</span>
           </Link>
           <Link
