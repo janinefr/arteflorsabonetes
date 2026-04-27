@@ -110,10 +110,10 @@ const ProductDetail = () => {
             href={whatsappLink(message)}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-medium text-[hsl(var(--whatsapp-foreground))] transition-transform hover:scale-[1.02]"
+            className="mt-2 inline-flex w-fit items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-[hsl(var(--whatsapp-foreground))] transition-transform hover:scale-[1.02]"
             style={{ backgroundColor: "hsl(var(--whatsapp))", boxShadow: "var(--shadow-soft)" }}
           >
-            <MessageCircle className="h-5 w-5" fill="currentColor" />
+            <MessageCircle className="h-4 w-4" fill="currentColor" />
             Pedir no WhatsApp
           </a>
 
