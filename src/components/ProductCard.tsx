@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
 import { Product, whatsappLink } from "@/data/products";
 
@@ -7,10 +8,11 @@ interface Props {
 
 export const ProductCard = ({ product }: Props) => {
   const message = `Olá! Tenho interesse no produto "${product.name}" (${product.quantity}). Pode me passar mais informações?`;
+  const href = `/produto/${product.id}`;
 
   return (
     <article className="product-card group flex flex-col">
-      <div className="img-wrap relative aspect-square bg-muted">
+      <Link to={href} className="img-wrap relative block aspect-square bg-muted">
         <img
           src={product.image}
           alt={product.name}
@@ -24,15 +26,15 @@ export const ProductCard = ({ product }: Props) => {
             {product.highlight}
           </span>
         )}
-      </div>
+      </Link>
 
       <div className="flex flex-1 flex-col gap-3 p-5">
         <span className="text-xs uppercase tracking-widest text-muted-foreground">
           {product.category}
         </span>
-        <h3 className="font-serif text-xl leading-tight text-foreground">
+        <Link to={href} className="font-serif text-xl leading-tight text-foreground transition-colors hover:text-primary">
           {product.name}
-        </h3>
+        </Link>
         <p className="text-sm leading-relaxed text-muted-foreground line-clamp-3">
           {product.description}
         </p>
@@ -40,16 +42,24 @@ export const ProductCard = ({ product }: Props) => {
           {product.quantity}
         </p>
 
-        <a
-          href={whatsappLink(message)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-auto inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
-          style={{ background: "var(--gradient-primary)" }}
-        >
-          <MessageCircle className="h-4 w-4" fill="currentColor" />
-          Pedir pelo WhatsApp
-        </a>
+        <div className="mt-auto flex flex-col gap-2">
+          <Link
+            to={href}
+            className="inline-flex items-center justify-center rounded-full border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+          >
+            Ver detalhes
+          </Link>
+          <a
+            href={whatsappLink(message)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
+            style={{ background: "var(--gradient-primary)" }}
+          >
+            <MessageCircle className="h-4 w-4" fill="currentColor" />
+            Pedir pelo WhatsApp
+          </a>
+        </div>
       </div>
     </article>
   );
