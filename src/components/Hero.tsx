@@ -1,5 +1,6 @@
-import { MessageCircle, Flower2 } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import heroImg from "@/assets/hero-soaps.jpg";
+import logo from "@/assets/logo-arteflor.png";
 import { whatsappLink } from "@/data/products";
 
 export const Hero = () => (
@@ -10,9 +11,12 @@ export const Hero = () => (
     />
     <div className="container mx-auto grid gap-12 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
       <div className="flex flex-col gap-6">
-        <span className="inline-flex w-fit items-center gap-2 rounded-full bg-card/70 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-primary backdrop-blur">
-          <Flower2 className="h-3.5 w-3.5" /> Sabonetes Artesanais
-        </span>
+        <img
+          src={logo}
+          alt="Arte Flor Sabonetes"
+          className="h-24 w-24 rounded-full object-cover shadow-soft md:h-28 md:w-28"
+          style={{ boxShadow: "var(--shadow-soft)" }}
+        />
         <h1 className="font-serif text-5xl leading-[1.05] text-foreground md:text-7xl">
           Arte Flor
           <span className="block italic text-primary">Sabonetes</span>
