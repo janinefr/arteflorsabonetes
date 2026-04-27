@@ -96,11 +96,11 @@ export const products: Product[] = [
   },
 ];
 
-export const WHATSAPP_NUMBER = "558398409266";
+export const WHATSAPP_NUMBER = "5583987334129";
 
 export function whatsappLink(message?: string) {
-  const text = encodeURIComponent(
-    message ?? "Olá! Vim pelo catálogo Arte Flor Sabonetes e gostaria de mais informações."
-  );
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+  const base = `https://api.whatsapp.com/send/?phone=%2B${WHATSAPP_NUMBER}&type=phone_number&app_absent=0&utm_source=ig`;
+  if (!message) return `${base}&text`;
+  return `${base}&text=${encodeURIComponent(message)}`;
 }
+
