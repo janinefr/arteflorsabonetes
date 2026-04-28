@@ -6,6 +6,10 @@ import jasmim from "@/assets/soap-jasmim.jpg";
 import hibisco from "@/assets/soap-hibisco.jpg";
 import lembranca from "@/assets/soap-lembranca.jpg";
 import chaVerde from "@/assets/soap-cha-verde.jpg";
+import miniMargaridas from "@/assets/mini-soap-1.jpg";
+import miniDalia from "@/assets/mini-soap-2.jpg";
+import miniLotus from "@/assets/mini-soap-3.jpg";
+import miniRosas from "@/assets/mini-soap-4.jpg";
 
 export type Product = {
   id: string;
@@ -13,6 +17,7 @@ export type Product = {
   category: "Sabonetes" | "Minisabonetes" | "Kit de Sabonetes" | "Lembrancinhas";
   description: string;
   quantity: string;
+  price?: string;
   image: string;
   highlight?: string;
 };
@@ -85,23 +90,45 @@ export const products: Product[] = [
     highlight: "Presente",
   },
   {
-    id: "mini-flores-sortidas",
-    name: "Minisabonetes Flores Sortidas",
+    id: "mini-margaridas",
+    name: "Minisabonete Margarida",
     category: "Minisabonetes",
     description:
-      "Pequenos sabonetes em formatos delicados de flores variadas. Ideais para presentear, compor cestas ou para o lavabo.",
-    quantity: "Cartela com 6 unidades · 15g cada",
-    image: kit,
+      "Mini sabonete em formato de margarida, perfumado e delicado. Sob encomenda, o cliente pode escolher qualquer cor.",
+    quantity: "1 unidade",
+    price: "R$ 1,00 / unidade",
+    image: miniMargaridas,
     highlight: "Novo",
   },
   {
-    id: "mini-rosas-charme",
-    name: "Minisabonetes Rosas Charme",
+    id: "mini-dalia",
+    name: "Minisabonete Dália",
     category: "Minisabonetes",
     description:
-      "Mini rosas perfumadas com essência floral suave, embaladas individualmente. Perfeitas para lembranças e mimos.",
-    quantity: "10 unidades · 12g cada",
-    image: rosa,
+      "Mini sabonete em formato de dália, com acabamento brilhante e aroma suave. Sob encomenda, o cliente pode escolher qualquer cor.",
+    quantity: "1 unidade",
+    price: "R$ 1,00 / unidade",
+    image: miniDalia,
+  },
+  {
+    id: "mini-lotus",
+    name: "Minisabonete Flor de Lótus",
+    category: "Minisabonetes",
+    description:
+      "Mini sabonete em formato de flor de lótus com detalhe perolado no centro. Sob encomenda, o cliente pode escolher qualquer cor.",
+    quantity: "1 unidade",
+    price: "R$ 1,00 / unidade",
+    image: miniLotus,
+  },
+  {
+    id: "mini-rosas-charme",
+    name: "Minisabonete Rosa Charme",
+    category: "Minisabonetes",
+    description:
+      "Mini rosa perfumada com essência floral suave e pérola central. Sob encomenda, o cliente pode escolher qualquer cor.",
+    quantity: "1 unidade",
+    price: "R$ 1,00 / unidade",
+    image: miniRosas,
   },
   {
     id: "lembrancinha-flor",
