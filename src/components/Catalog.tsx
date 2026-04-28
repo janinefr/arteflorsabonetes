@@ -2,7 +2,13 @@ import { useMemo, useState } from "react";
 import { products, Product } from "@/data/products";
 import { ProductCard } from "./ProductCard";
 
-const categories = ["Todos", "Sabonetes", "Kit de Sabonetes", "Lembrancinhas"] as const;
+const categories = [
+  "Todos",
+  "Sabonetes",
+  "Minisabonetes",
+  "Kit de Sabonetes",
+  "Lembrancinhas",
+] as const;
 type Category = (typeof categories)[number];
 
 export const Catalog = () => {
@@ -14,38 +20,32 @@ export const Catalog = () => {
   );
 
   return (
-    <section id="catalogo" className="py-20 md:py-28">
+    <section id="catalogo" className="pb-24">
       <div className="container mx-auto px-6">
-        <div className="mx-auto mb-12 max-w-2xl text-center">
-          <span className="text-xs uppercase tracking-[0.3em] text-primary">
-            Catálogo
-          </span>
-          <h2 className="mt-3 font-serif text-4xl text-foreground md:text-5xl">
-            Nossa coleção floral
-          </h2>
-          <p className="mt-4 text-muted-foreground">
-            Cada peça é feita à mão, em pequenos lotes. Escolha seus favoritos
-            e finalize o pedido pelo WhatsApp.
+        {/* Filtros */}
+        <div className="flex flex-col gap-6 border-y border-border/70 py-5 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-wrap items-center gap-x-7 gap-y-2">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActive(cat)}
+                className={`text-xs uppercase tracking-[0.25em] transition-colors ${
+                  active === cat
+                    ? "text-foreground underline underline-offset-[6px] decoration-1"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+          <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+            {filtered.length} {filtered.length === 1 ? "peça" : "peças"}
           </p>
         </div>
 
-        <div className="mb-10 flex flex-wrap justify-center gap-2">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActive(cat)}
-              className={`rounded-full border px-5 py-2 text-sm transition-colors ${
-                active === cat
-                  ? "border-primary bg-primary text-primary-foreground"
-                  : "border-border bg-card text-foreground hover:border-primary/50"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {/* Grid */}
+        <div className="grid gap-x-6 gap-y-12 pt-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filtered.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}

@@ -10,7 +10,7 @@ import chaVerde from "@/assets/soap-cha-verde.jpg";
 export type Product = {
   id: string;
   name: string;
-  category: "Sabonetes" | "Kit de Sabonetes" | "Lembrancinhas";
+  category: "Sabonetes" | "Minisabonetes" | "Kit de Sabonetes" | "Lembrancinhas";
   description: string;
   quantity: string;
   image: string;
@@ -83,6 +83,25 @@ export const products: Product[] = [
     quantity: "Kit com 5 unidades · 30g cada",
     image: kit,
     highlight: "Presente",
+  },
+  {
+    id: "mini-flores-sortidas",
+    name: "Minisabonetes Flores Sortidas",
+    category: "Minisabonetes",
+    description:
+      "Pequenos sabonetes em formatos delicados de flores variadas. Ideais para presentear, compor cestas ou para o lavabo.",
+    quantity: "Cartela com 6 unidades · 15g cada",
+    image: kit,
+    highlight: "Novo",
+  },
+  {
+    id: "mini-rosas-charme",
+    name: "Minisabonetes Rosas Charme",
+    category: "Minisabonetes",
+    description:
+      "Mini rosas perfumadas com essência floral suave, embaladas individualmente. Perfeitas para lembranças e mimos.",
+    quantity: "10 unidades · 12g cada",
+    image: rosa,
   },
   {
     id: "lembrancinha-flor",

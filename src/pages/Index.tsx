@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Hero } from "@/components/Hero";
 import { Catalog } from "@/components/Catalog";
 import { Footer } from "@/components/Footer";
+import { TopNav } from "@/components/TopNav";
 import { WhatsAppFloating } from "@/components/WhatsAppButton";
 
 const Index = () => {
@@ -19,7 +20,8 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background">
+      <TopNav />
       <Hero />
       <Catalog />
       <Footer />
