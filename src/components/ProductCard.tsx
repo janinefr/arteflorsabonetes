@@ -48,6 +48,9 @@ export const ProductCard = ({ product }: Props) => {
         <span className="text-xs uppercase tracking-widest text-muted-foreground">
           {product.category}
         </span>
+        {product.price && (
+          <span className="pt-1 text-sm text-foreground">{product.price}</span>
+        )}
       </div>
     </article>
   );

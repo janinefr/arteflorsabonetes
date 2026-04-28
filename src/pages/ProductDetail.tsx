@@ -97,6 +97,10 @@ const ProductDetail = () => {
             {product.description}
           </p>
 
+          {product.price && (
+            <div className="text-2xl font-serif text-foreground">{product.price}</div>
+          )}
+
           <div className="mt-2 flex items-center gap-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">
             <span>Apresentação</span>
             <span className="text-foreground">{product.quantity}</span>
