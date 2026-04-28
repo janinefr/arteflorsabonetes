@@ -58,19 +58,8 @@ const ProductDetail = () => {
       {/* Produto */}
       <section className="container mx-auto grid gap-10 px-6 py-10 md:grid-cols-[1fr_1fr] md:gap-16 md:py-14">
         {/* Galeria */}
-        <div className="flex gap-4">
-          <div className="hidden flex-col gap-3 md:flex">
-            {[0, 1, 2].map((i) => (
-              <button
-                key={i}
-                className={`h-20 w-20 overflow-hidden border ${i === 0 ? "border-foreground" : "border-border"} bg-muted`}
-                aria-label={`Imagem ${i + 1}`}
-              >
-                <img src={product.image} alt="" className="h-full w-full object-cover" />
-              </button>
-            ))}
-          </div>
-          <div className="relative flex-1 overflow-hidden bg-muted">
+        <div className="flex flex-col gap-3">
+          <div className="relative overflow-hidden bg-muted">
             <img
               src={product.image}
               alt={product.name}
@@ -81,6 +70,17 @@ const ProductDetail = () => {
                 {product.highlight}
               </span>
             )}
+          </div>
+          <div className="grid grid-cols-4 gap-3">
+            {[0, 1, 2, 3].map((i) => (
+              <button
+                key={i}
+                className={`aspect-square overflow-hidden border ${i === 0 ? "border-foreground" : "border-border"} bg-muted`}
+                aria-label={`Imagem ${i + 1}`}
+              >
+                <img src={product.image} alt="" className="h-full w-full object-cover" />
+              </button>
+            ))}
           </div>
         </div>
 
