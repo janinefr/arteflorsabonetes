@@ -85,6 +85,25 @@ export const products: Product[] = [
     highlight: "Presente",
   },
   {
+    id: "mini-flores-sortidas",
+    name: "Minisabonetes Flores Sortidas",
+    category: "Minisabonetes",
+    description:
+      "Pequenos sabonetes em formatos delicados de flores variadas. Ideais para presentear, compor cestas ou para o lavabo.",
+    quantity: "Cartela com 6 unidades · 15g cada",
+    image: kit,
+    highlight: "Novo",
+  },
+  {
+    id: "mini-rosas-charme",
+    name: "Minisabonetes Rosas Charme",
+    category: "Minisabonetes",
+    description:
+      "Mini rosas perfumadas com essência floral suave, embaladas individualmente. Perfeitas para lembranças e mimos.",
+    quantity: "10 unidades · 12g cada",
+    image: rosa,
+  },
+  {
     id: "lembrancinha-flor",
     name: "Lembrancinha Floral em Tule",
     category: "Lembrancinhas",
