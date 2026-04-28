@@ -11,55 +11,43 @@ export const ProductCard = ({ product }: Props) => {
   const href = `/produto/${product.id}`;
 
   return (
-    <article className="product-card group flex flex-col">
-      <Link to={href} className="img-wrap relative block aspect-square bg-muted">
+    <article className="group flex flex-col">
+      <Link to={href} className="relative block aspect-square overflow-hidden bg-muted">
         <img
           src={product.image}
           alt={product.name}
           loading="lazy"
           width={768}
           height={768}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
         />
         {product.highlight && (
-          <span className="absolute left-3 top-3 rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground shadow-soft">
+          <span className="absolute left-3 top-3 rounded-sm bg-background/95 px-3 py-1 text-[10px] uppercase tracking-widest text-foreground shadow-sm">
             {product.highlight}
           </span>
         )}
+        <a
+          href={whatsappLink(message)}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="absolute bottom-3 right-3 inline-flex items-center gap-1.5 rounded-full bg-background/95 px-3 py-1.5 text-[11px] font-medium text-foreground opacity-0 shadow-sm transition-opacity group-hover:opacity-100"
+        >
+          <MessageCircle className="h-3.5 w-3.5" fill="currentColor" />
+          WhatsApp
+        </a>
       </Link>
 
-      <div className="flex flex-1 flex-col gap-3 p-5">
+      <div className="flex flex-col gap-1 pt-4">
+        <Link
+          to={href}
+          className="font-serif text-lg leading-tight text-foreground transition-colors hover:text-primary"
+        >
+          {product.name}
+        </Link>
         <span className="text-xs uppercase tracking-widest text-muted-foreground">
           {product.category}
         </span>
-        <Link to={href} className="font-serif text-xl leading-tight text-foreground transition-colors hover:text-primary">
-          {product.name}
-        </Link>
-        <p className="text-sm leading-relaxed text-muted-foreground line-clamp-3">
-          {product.description}
-        </p>
-        <p className="text-sm font-medium text-accent-foreground/80">
-          {product.quantity}
-        </p>
-
-        <div className="mt-auto flex flex-col gap-2">
-          <Link
-            to={href}
-            className="inline-flex items-center justify-center rounded-full border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
-          >
-            Ver detalhes
-          </Link>
-          <a
-            href={whatsappLink(message)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
-            style={{ background: "var(--gradient-primary)" }}
-          >
-            <MessageCircle className="h-4 w-4" fill="currentColor" />
-            Pedir pelo WhatsApp
-          </a>
-        </div>
       </div>
     </article>
   );

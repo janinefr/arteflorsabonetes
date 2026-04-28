@@ -10,7 +10,7 @@ import chaVerde from "@/assets/soap-cha-verde.jpg";
 export type Product = {
   id: string;
   name: string;
-  category: "Sabonetes" | "Kit de Sabonetes" | "Lembrancinhas";
+  category: "Sabonetes" | "Minisabonetes" | "Kit de Sabonetes" | "Lembrancinhas";
   description: string;
   quantity: string;
   image: string;
