@@ -72,7 +72,7 @@ const ProductDetail = () => {
             )}
           </div>
           <div className="grid grid-cols-4 gap-3">
-            {[0, 1, 2, 3].map((i) => (
+            {[0].map((i) => (
               <button
                 key={i}
                 className={`aspect-square overflow-hidden border ${i === 0 ? "border-foreground" : "border-border"} bg-muted`}
@@ -102,7 +102,6 @@ const ProductDetail = () => {
           )}
 
           <div className="mt-2 flex items-center gap-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            <span>Apresentação</span>
             <span className="text-foreground">{product.quantity}</span>
           </div>
 

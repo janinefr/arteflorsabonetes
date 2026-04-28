@@ -5,7 +5,7 @@ import { ProductCard } from "./ProductCard";
 const categories = [
   "Todos",
   "Sabonetes",
-  "Minisabonetes",
+  "Mini sabonetes",
   "Kit de Sabonetes",
   "Lembrancinhas",
 ] as const;

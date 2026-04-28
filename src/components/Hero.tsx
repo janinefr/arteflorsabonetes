@@ -8,7 +8,7 @@ export const Hero = () => (
         Catálogo
       </h1>
       <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-        Sabonetes artesanais, kits, minisabonetes e lembrancinhas — pequenas
+        Sabonetes artesanais, kits, mini sabonetes e lembrancinhas — pequenas
         peças florais feitas com essências naturais. Pedidos diretamente pelo
         WhatsApp.
       </p>
