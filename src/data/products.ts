@@ -36,7 +36,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini sabonete em formato de margarida, perfumado e delicado. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniMargaridas,
     highlight: "Novo",
   },
@@ -46,7 +46,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini sabonete em formato de dália, com acabamento brilhante e aroma suave. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniDalia,
   },
   {
@@ -55,7 +55,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini sabonete em formato de flor de lótus com detalhe perolado no centro. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniLotus,
   },
   {
@@ -64,7 +64,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini rosa perfumada com essência floral suave e pérola central. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniRosas,
   },
   {
