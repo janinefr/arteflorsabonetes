@@ -26,6 +26,7 @@ export type Product = {
 
 const MINI_QTY = "A partir de 40 unidades";
 const MINI_PRICE = "R$ 2,00 / unidade";
+const MINI_PRICE_LOW = "R$ 1,00 / unidade";
 const MINI_DESC_SUFFIX = "Sob encomenda, o cliente pode escolher qualquer cor.";
 
 export const products: Product[] = [
