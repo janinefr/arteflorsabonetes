@@ -8,7 +8,7 @@ import miniCrisantemo from "@/assets/mini-crisantemo.jpg";
 import miniFlorCampo from "@/assets/mini-flor-campo.jpg";
 import miniFlorzinha from "@/assets/mini-florzinha.jpg";
 import miniRoseta from "@/assets/mini-roseta.jpg";
-import miniCerejeira from "@/assets/mini-cerejeira.jpg";
+
 import miniFlorCincoPetalas from "@/assets/mini-flor-cinco-petalas.jpg";
 import miniRosaClassica from "@/assets/mini-rosa-classica.jpg";
 import miniEstrela from "@/assets/mini-estrela.jpg";
@@ -73,7 +73,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini rosa em tom rosa intenso, com pétalas esculpidas em alto-relevo. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniRosaPink,
   },
   {
@@ -82,7 +82,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini margarida em formato delicado, ideal para lembrancinhas e composições florais. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniMargaridaTrio,
   },
   {
@@ -91,7 +91,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini sabonete em formato de crisântemo, com acabamento brilhante e textura facetada. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniCrisantemo,
   },
   {
@@ -100,7 +100,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini flor com pétalas suaves e acabamento clássico, perfeita para presentear. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniFlorCampo,
   },
   {
@@ -109,7 +109,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini florzinha delicada com miolo arredondado, ideal para festas infantis e chás. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniFlorzinha,
   },
   {
@@ -118,17 +118,8 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini roseta em formato circular com detalhes em espiral, charme atemporal. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniRoseta,
-  },
-  {
-    id: "mini-cerejeira",
-    name: "Mini sabonete Flor de Cerejeira",
-    category: "Mini sabonetes",
-    description: `Mini sabonete inspirado na flor de cerejeira, com acabamento delicado e aroma suave. ${MINI_DESC_SUFFIX}`,
-    quantity: MINI_QTY,
-    price: MINI_PRICE,
-    image: miniCerejeira,
   },
   {
     id: "mini-flor-cinco-petalas",
@@ -136,7 +127,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini flor de cinco pétalas com sulcos detalhados e centro arredondado. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE,
+    price: MINI_PRICE_LOW,
     image: miniFlorCincoPetalas,
   },
   {
