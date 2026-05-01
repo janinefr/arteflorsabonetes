@@ -8,7 +8,7 @@ import miniCrisantemo from "@/assets/mini-crisantemo.jpg";
 import miniFlorCampo from "@/assets/mini-flor-campo.jpg";
 import miniFlorzinha from "@/assets/mini-florzinha.jpg";
 import miniRoseta from "@/assets/mini-roseta.jpg";
-import miniCerejeira from "@/assets/mini-cerejeira.jpg";
+
 import miniFlorCincoPetalas from "@/assets/mini-flor-cinco-petalas.jpg";
 import miniRosaClassica from "@/assets/mini-rosa-classica.jpg";
 import miniEstrela from "@/assets/mini-estrela.jpg";
