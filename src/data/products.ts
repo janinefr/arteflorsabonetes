@@ -127,7 +127,7 @@ export const products: Product[] = [
     category: "Mini sabonetes",
     description: `Mini flor de cinco pétalas com sulcos detalhados e centro arredondado. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
-    price: MINI_PRICE_LOW,
+    price: MINI_PRICE,
     image: miniFlorCincoPetalas,
   },
   {
