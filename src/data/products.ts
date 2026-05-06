@@ -17,6 +17,8 @@ import kitMiniRosaRosa from "@/assets/kit-mini-rosa-rosa.jpg";
 import kitRosaClassica from "@/assets/kit-rosa-classica.jpg";
 import kitPezinhoLetrinha1 from "@/assets/kit-pezinho-letrinha-1.jpg";
 import kitPezinhoLetrinha2 from "@/assets/kit-pezinho-letrinha-2.jpg";
+import kitRosaCoracaoBorboleta1 from "@/assets/kit-rosa-coracao-borboleta-1.jpg";
+import kitRosaCoracaoBorboleta2 from "@/assets/kit-rosa-coracao-borboleta-2.jpg";
 
 export type Product = {
   id: string;
@@ -183,6 +185,16 @@ export const products: Product[] = [
     price: "R$ 3,00 / unidade",
     image: kitPezinhoLetrinha1,
     images: [kitPezinhoLetrinha1, kitPezinhoLetrinha2],
+  },
+  {
+    id: "kit-rosa-coracao-borboleta",
+    name: "Kit Rosa, Coração e Borboleta",
+    category: "Kit mini sabonetes",
+    description: `Kit lembrancinha sortido com sabonetes em formato de rosa, coração e borboleta, embalado em tule com botão de rosa e tag personalizada. Composição romântica ideal para casamentos, noivados, dia das mães e datas especiais. ${MINI_DESC_SUFFIX}`,
+    quantity: "A partir de 20 unidades",
+    price: "R$ 6,00 / unidade",
+    image: kitRosaCoracaoBorboleta1,
+    images: [kitRosaCoracaoBorboleta1, kitRosaCoracaoBorboleta2],
   },
 ];
 
