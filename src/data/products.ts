@@ -186,6 +186,16 @@ export const products: Product[] = [
     image: kitPezinhoLetrinha1,
     images: [kitPezinhoLetrinha1, kitPezinhoLetrinha2],
   },
+  {
+    id: "kit-rosa-coracao-borboleta",
+    name: "Kit Rosa, Coração e Borboleta",
+    category: "Kit mini sabonetes",
+    description: `Kit lembrancinha sortido com sabonetes em formato de rosa, coração e borboleta, embalado em tule com botão de rosa e tag personalizada. Composição romântica ideal para casamentos, noivados, dia das mães e datas especiais. ${MINI_DESC_SUFFIX}`,
+    quantity: "A partir de 20 unidades",
+    price: "R$ 6,00 / unidade",
+    image: kitRosaCoracaoBorboleta1,
+    images: [kitRosaCoracaoBorboleta1, kitRosaCoracaoBorboleta2],
+  },
 ];
 
 export const WHATSAPP_NUMBER = "5583987334129";
