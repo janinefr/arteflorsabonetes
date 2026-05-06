@@ -14,6 +14,9 @@ import miniRosaClassica from "@/assets/mini-rosa-classica.jpg";
 import miniEstrela from "@/assets/mini-estrela.jpg";
 import kitMiniRosaBranca from "@/assets/kit-mini-rosa-branca.jpg";
 import kitMiniRosaRosa from "@/assets/kit-mini-rosa-rosa.jpg";
+import kitRosaClassica from "@/assets/kit-rosa-classica.jpg";
+import kitPezinhoLetrinha1 from "@/assets/kit-pezinho-letrinha-1.jpg";
+import kitPezinhoLetrinha2 from "@/assets/kit-pezinho-letrinha-2.jpg";
 
 export type Product = {
   id: string;
@@ -161,6 +164,25 @@ export const products: Product[] = [
     image: kitMiniRosaBranca,
     images: [kitMiniRosaBranca, kitMiniRosaRosa],
     highlight: "Novo",
+  },
+  {
+    id: "kit-rosa-classica",
+    name: "Kit Rosa Clássica",
+    category: "Kit mini sabonetes",
+    description: `Kit lembrancinha com sabonete em formato de rosa clássica, embalado em tule e fita de cetim, acompanhado de tag personalizada. Ideal para aniversários, casamentos e eventos especiais. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: "R$ 3,50 / unidade",
+    image: kitRosaClassica,
+  },
+  {
+    id: "kit-pezinho-bebe-letrinha",
+    name: "Kit Pézinho Bebê com Letrinha",
+    category: "Kit mini sabonetes",
+    description: `Kit lembrancinha com mini sabonete em formato de pézinho de bebê acompanhado de letrinha personalizada (inicial do nome), embalado em tule e fita de cetim com tag temática. Perfeito para chá de bebê, maternidade e batizados. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: "R$ 3,00 / unidade",
+    image: kitPezinhoLetrinha1,
+    images: [kitPezinhoLetrinha1, kitPezinhoLetrinha2],
   },
 ];
 
