@@ -165,6 +165,25 @@ export const products: Product[] = [
     images: [kitMiniRosaBranca, kitMiniRosaRosa],
     highlight: "Novo",
   },
+  {
+    id: "kit-rosa-classica",
+    name: "Kit Rosa Clássica",
+    category: "Kit mini sabonetes",
+    description: `Kit lembrancinha com sabonete em formato de rosa clássica, embalado em tule e fita de cetim, acompanhado de tag personalizada. Ideal para aniversários, casamentos e eventos especiais. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: "R$ 3,50 / unidade",
+    image: kitRosaClassica,
+  },
+  {
+    id: "kit-pezinho-bebe-letrinha",
+    name: "Kit Pézinho Bebê com Letrinha",
+    category: "Kit mini sabonetes",
+    description: `Kit lembrancinha com mini sabonete em formato de pézinho de bebê acompanhado de letrinha personalizada (inicial do nome), embalado em tule e fita de cetim com tag temática. Perfeito para chá de bebê, maternidade e batizados. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: "R$ 3,00 / unidade",
+    image: kitPezinhoLetrinha1,
+    images: [kitPezinhoLetrinha1, kitPezinhoLetrinha2],
+  },
 ];
 
 export const WHATSAPP_NUMBER = "5583987334129";
