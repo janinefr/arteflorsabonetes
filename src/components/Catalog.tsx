@@ -6,6 +6,7 @@ const categories = [
   "Todos",
   "Sabonetes",
   "Mini sabonetes",
+  "Kit mini sabonetes",
   "Kit de Sabonetes",
   "Lembrancinhas",
 ] as const;
