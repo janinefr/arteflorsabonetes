@@ -14,6 +14,9 @@ import miniRosaClassica from "@/assets/mini-rosa-classica.jpg";
 import miniEstrela from "@/assets/mini-estrela.jpg";
 import kitMiniRosaBranca from "@/assets/kit-mini-rosa-branca.jpg";
 import kitMiniRosaRosa from "@/assets/kit-mini-rosa-rosa.jpg";
+import kitRosaClassica from "@/assets/kit-rosa-classica.jpg";
+import kitPezinhoLetrinha1 from "@/assets/kit-pezinho-letrinha-1.jpg";
+import kitPezinhoLetrinha2 from "@/assets/kit-pezinho-letrinha-2.jpg";
 
 export type Product = {
   id: string;
