@@ -23,6 +23,7 @@ export type Product = {
   quantity: string;
   price?: string;
   image: string;
+  images?: string[];
   highlight?: string;
 };
 
@@ -151,23 +152,15 @@ export const products: Product[] = [
     image: miniEstrela,
   },
   {
-    id: "kit-mini-rosa-branca",
-    name: "Kit Mini Sabonete Rosa Branca",
+    id: "kit-mini-rosa",
+    name: "Kit Mini Sabonete Rosa",
     category: "Kit mini sabonetes",
-    description: `Kit lembrancinha com mini sabonete em formato de rosa branca, embalado em tule e fita de cetim verde, acompanhado de tag personalizada. Ideal para casamentos, batizados e eventos religiosos. ${MINI_DESC_SUFFIX}`,
+    description: `Kit lembrancinha com mini sabonete em formato de rosa, embalado em tule e fita de cetim, acompanhado de tag personalizada. Ideal para casamentos, batizados, eventos religiosos e campanhas temáticas. ${MINI_DESC_SUFFIX}`,
     quantity: MINI_QTY,
     price: "R$ 3,00 / unidade",
     image: kitMiniRosaBranca,
+    images: [kitMiniRosaBranca, kitMiniRosaRosa],
     highlight: "Novo",
-  },
-  {
-    id: "kit-mini-rosa-rosa",
-    name: "Kit Mini Sabonete Rosa Outubro Rosa",
-    category: "Kit mini sabonetes",
-    description: `Kit lembrancinha com mini sabonete em formato de rosa em tom rosa, embalado em tule e fita de cetim, acompanhado de tag temática Outubro Rosa. Perfeito para campanhas, eventos e ações de conscientização. ${MINI_DESC_SUFFIX}`,
-    quantity: MINI_QTY,
-    price: "R$ 3,00 / unidade",
-    image: kitMiniRosaRosa,
   },
 ];
 
