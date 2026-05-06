@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { MessageCircle, Hammer, Truck, ShieldCheck, HelpCircle } from "lucide-react";
 import { products, whatsappLink } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
@@ -9,6 +9,8 @@ import { Footer } from "@/components/Footer";
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
   const product = products.find((p) => p.id === id);
+  const gallery = product?.images && product.images.length > 0 ? product.images : product ? [product.image] : [];
+  const [activeImg, setActiveImg] = useState(0);
 
   useEffect(() => {
     if (product) {
@@ -61,7 +63,7 @@ const ProductDetail = () => {
         <div className="flex flex-col gap-3">
           <div className="relative overflow-hidden bg-muted">
             <img
-              src={product.image}
+              src={gallery[activeImg]}
               alt={product.name}
               className="aspect-square w-full object-cover"
             />
@@ -71,17 +73,20 @@ const ProductDetail = () => {
               </span>
             )}
           </div>
-          <div className="grid grid-cols-4 gap-3">
-            {[0].map((i) => (
-              <button
-                key={i}
-                className={`aspect-square overflow-hidden border ${i === 0 ? "border-foreground" : "border-border"} bg-muted`}
-                aria-label={`Imagem ${i + 1}`}
-              >
-                <img src={product.image} alt="" className="h-full w-full object-cover" />
-              </button>
-            ))}
-          </div>
+          {gallery.length > 1 && (
+            <div className="grid grid-cols-4 gap-3">
+              {gallery.map((src, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActiveImg(i)}
+                  className={`aspect-square overflow-hidden border ${i === activeImg ? "border-foreground" : "border-border"} bg-muted`}
+                  aria-label={`Imagem ${i + 1}`}
+                >
+                  <img src={src} alt="" className="h-full w-full object-cover" />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Info */}
