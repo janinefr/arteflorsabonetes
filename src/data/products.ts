@@ -242,7 +242,44 @@ export const products: Product[] = [
     price: "R$ 36,00 / unidade",
     image: velaPoteTampaMadeira,
   },
+  {
+    id: "vela-margarida",
+    name: "Vela Margarida",
+    category: "Velas perfumadas",
+    description: "Mini vela perfumada em formato de margarida, com pétalas delicadamente esculpidas e acabamento aveludado. Perfeita como lembrancinha de casamento, chá de bebê ou para compor centros de mesa românticos.",
+    quantity: "Unidade",
+    price: "R$ 5,00 / unidade",
+    image: velaMargarida,
+  },
+  {
+    id: "vela-lembrancinha-azul",
+    name: "Vela Lembrancinha Azul",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em potinho de vidro com tampa de rolha, laço de cetim azul e mensagem personalizada. Lembrancinha ideal para chá de bebê, batizado de menino e maternidade.",
+    quantity: "Unidade",
+    price: "R$ 15,00 / unidade",
+    image: velaLembrancinhaAzul,
+  },
+  {
+    id: "vela-pavio-madeira",
+    name: "Vela Pote de Vidro com Pavio de Madeira",
+    category: "Velas perfumadas",
+    description: "Vela perfumada artesanal em pote de vidro com pavio de madeira que crepita ao queimar, decorada com mini frutinhas e tampa de pinus com laço de cetim. Experiência sensorial sofisticada para presentear ou perfumar ambientes.",
+    quantity: "Unidade",
+    price: "R$ 36,00 / unidade",
+    image: velaPavioMadeira,
+  },
+  {
+    id: "vela-estrela-seja-luz",
+    name: "Vela Estrela Seja Luz",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em delicado potinho de vidro no formato de estrela, com tampa de rolha, mini rosa branca, laço vermelho e mensagem personalizada \"Seja luz\". Lembrancinha encantadora para casamentos, formaturas e datas especiais.",
+    quantity: "Unidade",
+    price: "R$ 18,00 / unidade",
+    image: velaEstrelaSejaLuz,
+  },
 ];
+
 
 
 export const WHATSAPP_NUMBER = "5583987334129";
