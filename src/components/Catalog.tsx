@@ -9,7 +9,9 @@ const categories = [
   "Kit mini sabonetes",
   "Kit de Sabonetes",
   "Lembrancinhas",
+  "Velas perfumadas",
 ] as const;
+
 type Category = (typeof categories)[number];
 
 export const Catalog = () => {
