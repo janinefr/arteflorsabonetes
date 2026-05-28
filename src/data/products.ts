@@ -19,11 +19,15 @@ import kitPezinhoLetrinha1 from "@/assets/kit-pezinho-letrinha-1.jpg";
 import kitPezinhoLetrinha2 from "@/assets/kit-pezinho-letrinha-2.jpg";
 import kitRosaCoracaoBorboleta1 from "@/assets/kit-rosa-coracao-borboleta-1.jpg";
 import kitRosaCoracaoBorboleta2 from "@/assets/kit-rosa-coracao-borboleta-2.jpg";
+import velaFormatosDiversos from "@/assets/vela-formatos-diversos.jpg";
+import velaLembrancinhaPersonalizada from "@/assets/vela-lembrancinha-personalizada.jpg";
+import velaPotinhoVidroRolha from "@/assets/vela-potinho-vidro-rolha.jpg";
+import velaPoteTampaMadeira from "@/assets/vela-pote-tampa-madeira.jpg";
 
 export type Product = {
   id: string;
   name: string;
-  category: "Sabonetes" | "Mini sabonetes" | "Kit de Sabonetes" | "Lembrancinhas" | "Kit mini sabonetes";
+  category: "Sabonetes" | "Mini sabonetes" | "Kit de Sabonetes" | "Lembrancinhas" | "Kit mini sabonetes" | "Velas perfumadas";
   description: string;
   quantity: string;
   price?: string;
@@ -31,6 +35,7 @@ export type Product = {
   images?: string[];
   highlight?: string;
 };
+
 
 const MINI_QTY = "A partir de 40 unidades";
 const MINI_PRICE = "R$ 2,00 / unidade";
