@@ -201,7 +201,45 @@ export const products: Product[] = [
     image: kitRosaCoracaoBorboleta1,
     images: [kitRosaCoracaoBorboleta1, kitRosaCoracaoBorboleta2],
   },
+  {
+    id: "vela-formatos-diversos",
+    name: "Vela Perfumada Formatos Diversos",
+    category: "Velas perfumadas",
+    description: "Trio de velas perfumadas em potes de cimento pintados em rosa, nos formatos hexagonal, quadrado e coração, decoradas com mini buquês e laço de cetim. Perfume suave e queima limpa, ideais para presentear ou decorar ambientes.",
+    quantity: "Unidade",
+    price: "R$ 15,00 / unidade",
+    image: velaFormatosDiversos,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-lembrancinha-personalizada",
+    name: "Vela Lembrancinha Personalizada",
+    category: "Velas perfumadas",
+    description: "Mini vela perfumada embalada em celofane com laço de cetim e tag personalizada com o nome e tema da festa. Perfeita como lembrancinha para chá de bebê, batizados e aniversários infantis.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: velaLembrancinhaPersonalizada,
+  },
+  {
+    id: "vela-potinho-vidro-rolha",
+    name: "Vela Potinho de Vidro com Rolha",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em delicado potinho de vidro com tampa de rolha de cortiça, decorada com mini botões de rosa e laço de cetim. Lembrancinha sofisticada e atemporal para casamentos, noivados e eventos especiais.",
+    quantity: "Unidade",
+    price: "R$ 15,00 / unidade",
+    image: velaPotinhoVidroRolha,
+  },
+  {
+    id: "vela-pote-tampa-madeira",
+    name: "Vela Perfumada Pote com Tampa de Madeira",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em pote de vidro com tampa de madeira natural, opção de aplique decorativo ou rótulo personalizado com mensagem e nome do homenageado. Presente especial para madrinhas, padrinhos, professores e datas comemorativas.",
+    quantity: "Unidade",
+    price: "R$ 36,00 / unidade",
+    image: velaPoteTampaMadeira,
+  },
 ];
+
 
 export const WHATSAPP_NUMBER = "5583987334129";
 
