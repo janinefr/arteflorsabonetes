@@ -23,6 +23,10 @@ import velaFormatosDiversos from "@/assets/vela-formatos-diversos.jpg";
 import velaLembrancinhaPersonalizada from "@/assets/vela-lembrancinha-personalizada.jpg";
 import velaPotinhoVidroRolha from "@/assets/vela-potinho-vidro-rolha.jpg";
 import velaPoteTampaMadeira from "@/assets/vela-pote-tampa-madeira.jpg";
+import velaMargarida from "@/assets/vela-margarida.jpg";
+import velaLembrancinhaAzul from "@/assets/vela-lembrancinha-azul.jpg";
+import velaPavioMadeira from "@/assets/vela-pavio-madeira.jpg";
+import velaEstrelaSejaLuz from "@/assets/vela-estrela-seja-luz.jpg";
 
 export type Product = {
   id: string;
