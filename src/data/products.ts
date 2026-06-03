@@ -27,11 +27,16 @@ import velaMargarida from "@/assets/vela-margarida.jpg";
 import velaLembrancinhaAzul from "@/assets/vela-lembrancinha-azul.jpg";
 import velaPavioMadeira from "@/assets/vela-pavio-madeira.jpg";
 import velaEstrelaSejaLuz from "@/assets/vela-estrela-seja-luz.jpg";
+import maternidadePezinhoRosaLetrinha from "@/assets/maternidade-pezinho-rosa-letrinha.jpg";
+import maternidadeChegueiIsabela from "@/assets/maternidade-cheguei-isabela.jpg";
+import maternidadeChaRevelacaoCoracao from "@/assets/maternidade-cha-revelacao-coracao.jpg";
+import maternidadeUrsinhoPezinhoAntonelly from "@/assets/maternidade-ursinho-pezinho-antonelly.jpg";
+import maternidadePezinhoAzul from "@/assets/maternidade-pezinho-azul.jpg";
 
 export type Product = {
   id: string;
   name: string;
-  category: "Sabonetes" | "Mini sabonetes" | "Kit de Sabonetes" | "Lembrancinhas" | "Kit mini sabonetes" | "Velas perfumadas";
+  category: "Sabonetes" | "Mini sabonetes" | "Kit de Sabonetes" | "Lembrancinhas" | "Kit mini sabonetes" | "Velas perfumadas" | "Maternidade";
   description: string;
   quantity: string;
   price?: string;
@@ -277,6 +282,52 @@ export const products: Product[] = [
     quantity: "Unidade",
     price: "R$ 18,00 / unidade",
     image: velaEstrelaSejaLuz,
+  },
+  {
+    id: "maternidade-pezinho-rosa-letrinha",
+    name: "Lembrancinha Pézinho Rosa com Letrinha",
+    category: "Maternidade",
+    description: "Lembrancinha de maternidade com sabonete em formato de pézinho rosa e letrinha personalizada (inicial do nome do bebê), embalado em tule rosa com fita de cetim e tag com mensagem de agradecimento personalizada. Ideal para chá de bebê e visita à maternidade.",
+    quantity: "Unidade",
+    price: "R$ 3,00 / unidade",
+    image: maternidadePezinhoRosaLetrinha,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-cheguei-isabela",
+    name: "Lembrancinha Cheguei! Pézinho",
+    category: "Maternidade",
+    description: "Sabonete redondo com mini pézinhos rosa em alto-relevo, embalado em celofane com laço de cetim rosa e tag personalizada \"Cheguei! Obrigada pela visita\" com nome do bebê e data de nascimento. Lembrancinha sofisticada para visitas à maternidade.",
+    quantity: "Unidade",
+    price: "R$ 5,00 / unidade",
+    image: maternidadeChegueiIsabela,
+  },
+  {
+    id: "maternidade-cha-revelacao-coracao",
+    name: "Lembrancinha Chá Revelação Coração",
+    category: "Maternidade",
+    description: "Lembrancinha de chá revelação com sabonetes em formato de coração nas cores rosa, azul e branco, embalados em tule com laço branco e tag personalizada com os nomes do casal de bebês. Combinação perfeita para revelar o sexo do bebê com carinho.",
+    quantity: "Unidade",
+    price: "R$ 5,00 / unidade",
+    image: maternidadeChaRevelacaoCoracao,
+  },
+  {
+    id: "maternidade-ursinho-pezinho-antonelly",
+    name: "Lembrancinha Ursinho e Pézinho",
+    category: "Maternidade",
+    description: "Lembrancinha de maternidade com sabonetes em formato de ursinho rosa e pézinho branco, embalados em celofane com tule rosa, fita de cetim e tag personalizada com mensagem de agradecimento. Tema ursinho fofo e delicado para chá de bebê e maternidade.",
+    quantity: "Unidade",
+    price: "R$ 4,00 / unidade",
+    image: maternidadeUrsinhoPezinhoAntonelly,
+  },
+  {
+    id: "maternidade-pezinho-azul",
+    name: "Lembrancinha Pézinho Azul",
+    category: "Maternidade",
+    description: "Lembrancinha de maternidade com sabonete em formato de pézinho branco, embalado em tule azul com fita de cetim branca e tag redonda personalizada com ilustração de ursinho. Perfeita para chá de bebê e visita à maternidade de menino.",
+    quantity: "Unidade",
+    price: "R$ 3,00 / unidade",
+    image: maternidadePezinhoAzul,
   },
 ];
 

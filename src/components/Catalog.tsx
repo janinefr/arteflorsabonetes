@@ -10,6 +10,7 @@ const categories = [
   "Kit de Sabonetes",
   "Lembrancinhas",
   "Velas perfumadas",
+  "Maternidade",
 ] as const;
 
 type Category = (typeof categories)[number];
