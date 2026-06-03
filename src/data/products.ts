@@ -27,11 +27,16 @@ import velaMargarida from "@/assets/vela-margarida.jpg";
 import velaLembrancinhaAzul from "@/assets/vela-lembrancinha-azul.jpg";
 import velaPavioMadeira from "@/assets/vela-pavio-madeira.jpg";
 import velaEstrelaSejaLuz from "@/assets/vela-estrela-seja-luz.jpg";
+import maternidadePezinhoRosaLetrinha from "@/assets/maternidade-pezinho-rosa-letrinha.jpg";
+import maternidadeChegueiIsabela from "@/assets/maternidade-cheguei-isabela.jpg";
+import maternidadeChaRevelacaoCoracao from "@/assets/maternidade-cha-revelacao-coracao.jpg";
+import maternidadeUrsinhoPezinhoAntonelly from "@/assets/maternidade-ursinho-pezinho-antonelly.jpg";
+import maternidadePezinhoAzul from "@/assets/maternidade-pezinho-azul.jpg";
 
 export type Product = {
   id: string;
   name: string;
-  category: "Sabonetes" | "Mini sabonetes" | "Kit de Sabonetes" | "Lembrancinhas" | "Kit mini sabonetes" | "Velas perfumadas";
+  category: "Sabonetes" | "Mini sabonetes" | "Kit de Sabonetes" | "Lembrancinhas" | "Kit mini sabonetes" | "Velas perfumadas" | "Maternidade";
   description: string;
   quantity: string;
   price?: string;
