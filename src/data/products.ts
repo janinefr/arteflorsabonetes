@@ -253,7 +253,7 @@ export const products: Product[] = [
     category: "Velas perfumadas",
     description: "Mini vela perfumada em formato de margarida, com pétalas delicadamente esculpidas e acabamento aveludado. Perfeita como lembrancinha de casamento, chá de bebê ou para compor centros de mesa românticos.",
     quantity: "Unidade",
-    price: "R$ 6,00 / unidade",
+    price: "R$ 5,00 / unidade",
     image: velaMargarida,
   },
   {
