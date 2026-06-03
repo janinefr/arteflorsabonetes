@@ -299,7 +299,7 @@ export const products: Product[] = [
     category: "Maternidade",
     description: "Sabonete redondo com mini pézinhos rosa em alto-relevo, embalado em celofane com laço de cetim rosa e tag personalizada \"Cheguei! Obrigada pela visita\" com nome do bebê e data de nascimento. Lembrancinha sofisticada para visitas à maternidade.",
     quantity: "Unidade",
-    price: "R$ 5,00 / unidade",
+    price: "R$ 6,00 / unidade",
     image: maternidadeChegueiIsabela,
   },
   {
