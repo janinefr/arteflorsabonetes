@@ -32,6 +32,11 @@ import maternidadeChegueiIsabela from "@/assets/maternidade-cheguei-isabela.jpg"
 import maternidadeChaRevelacaoCoracao from "@/assets/maternidade-cha-revelacao-coracao.jpg";
 import maternidadeUrsinhoPezinhoAntonelly from "@/assets/maternidade-ursinho-pezinho-antonelly.jpg";
 import maternidadePezinhoAzul from "@/assets/maternidade-pezinho-azul.jpg";
+import maternidadeKitLetrinhasEspalheAmor from "@/assets/maternidade-kit-letrinhas-espalhe-amor.jpg";
+import maternidadePezinhoRosa from "@/assets/maternidade-pezinho-rosa.jpg";
+import maternidadeKitChaPedroHenrique from "@/assets/maternidade-kit-cha-pedro-henrique.jpg";
+import maternidadeKitSafariChegueiGael from "@/assets/maternidade-kit-safari-cheguei-gael.jpg";
+import maternidadeSafariAnimais from "@/assets/maternidade-safari-animais.jpg";
 
 export type Product = {
   id: string;
@@ -328,6 +333,52 @@ export const products: Product[] = [
     quantity: "Unidade",
     price: "R$ 3,00 / unidade",
     image: maternidadePezinhoAzul,
+  },
+  {
+    id: "maternidade-kit-letrinhas-espalhe-amor",
+    name: "Kit Letrinhas Espalhe Amor",
+    category: "Maternidade",
+    description: "Kit lembrancinha com mini sabonetes em formato de cubos com letrinhas personalizadas (nome do bebê), nas cores lilás e branco, embalados em tule com fita de cetim lilás e tag personalizada \"Espalhe amor por onde for\". Perfeito para chá de bebê, batizados e maternidade.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: maternidadeKitLetrinhasEspalheAmor,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-pezinho-rosa",
+    name: "Mini Sabonete Pézinho Rosa",
+    category: "Maternidade",
+    description: `Mini sabonete em formato de pézinho de bebê na cor rosa, com acabamento brilhante e perfume suave. Ideal para compor lembrancinhas de chá de bebê e maternidade. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: "R$ 2,00 / unidade",
+    image: maternidadePezinhoRosa,
+  },
+  {
+    id: "maternidade-kit-cha-pedro-henrique",
+    name: "Kit Chá do Bebê Letrinhas e Ursinho",
+    category: "Maternidade",
+    description: "Kit lembrancinha com sabonete em formato de ursinho verde e letrinhas personalizadas (iniciais do nome do bebê) em branco, embalado em tule branco com fita de cetim e tag personalizada com o tema do chá. Ideal para chá de bebê e maternidade.",
+    quantity: "Unidade",
+    price: "R$ 5,00 / unidade",
+    image: maternidadeKitChaPedroHenrique,
+  },
+  {
+    id: "maternidade-kit-safari-cheguei-gael",
+    name: "Kit Safari Cheguei!",
+    category: "Maternidade",
+    description: "Lembrancinha de maternidade no tema safari, com sabonete em formato de animalzinho (leão, girafa, elefante ou hipopótamo) em cores variadas, embalado em tule com fita de cetim branca e tag personalizada \"Cheguei!\" com nome do bebê. Perfeito para visita à maternidade.",
+    quantity: "Unidade",
+    price: "R$ 3,50 / unidade",
+    image: maternidadeKitSafariChegueiGael,
+  },
+  {
+    id: "maternidade-safari-animais",
+    name: "Mini Sabonete Safari Animais",
+    category: "Maternidade",
+    description: `Mini sabonete em formato de animalzinho do safari (leão, elefante, girafa ou hipopótamo) em cores vibrantes, com acabamento brilhante e perfume suave. Ideal para compor lembrancinhas no tema safari. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: "R$ 1,00 / unidade",
+    image: maternidadeSafariAnimais,
   },
 ];
 
