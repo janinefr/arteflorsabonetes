@@ -37,6 +37,11 @@ import maternidadePezinhoRosa from "@/assets/maternidade-pezinho-rosa.jpg";
 import maternidadeKitChaPedroHenrique from "@/assets/maternidade-kit-cha-pedro-henrique.jpg";
 import maternidadeKitSafariChegueiGael from "@/assets/maternidade-kit-safari-cheguei-gael.jpg";
 import maternidadeSafariAnimais from "@/assets/maternidade-safari-animais.jpg";
+import maternidadeCheirinhoHelena from "@/assets/maternidade-cheirinho-helena.jpg";
+import maternidadeCheirinhoLuccaLohan from "@/assets/maternidade-cheirinho-lucca-lohan.jpg";
+import maternidadeMiniUrsinhoAzul from "@/assets/maternidade-mini-ursinho-azul.jpg";
+import maternidadeMiniDinossauros from "@/assets/maternidade-mini-dinossauros.jpg";
+import maternidadeVelaMarcusAugusto from "@/assets/maternidade-vela-marcus-augusto.jpg";
 
 export type Product = {
   id: string;
@@ -379,6 +384,54 @@ export const products: Product[] = [
     quantity: MINI_QTY,
     price: "R$ 1,00 / unidade",
     image: maternidadeSafariAnimais,
+  },
+  {
+    id: "maternidade-cheirinho-helena",
+    name: "Cheirinho Aromatizador Personalizado",
+    category: "Maternidade",
+    description: "Mini aromatizador de ambiente em frasco de vidro com varetas de bambu, tampa dourada e rótulo personalizado com o nome do bebê. Embalado em celofane com laço de cetim e tag de agradecimento personalizada. Lembrancinha sofisticada e perfumada para chá de bebê, maternidade e batizados.",
+    quantity: "Unidade",
+    price: "R$ 8,50 / unidade",
+    image: maternidadeCheirinhoHelena,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-cheirinho-lucca-lohan",
+    name: "Cheirinho Aromatizador Azul Personalizado",
+    category: "Maternidade",
+    description: "Mini aromatizador de ambiente em frasco de vidro com essência azul, varetas de bambu, tampa dourada e rótulo personalizado com nome e mensagem do bebê. Embalado em celofane com laço de cetim azul. Lembrancinha perfumada perfeita para chá de bebê e maternidade de menino.",
+    quantity: "Unidade",
+    price: "R$ 8,50 / unidade",
+    image: maternidadeCheirinhoLuccaLohan,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-mini-ursinho-azul",
+    name: "Mini Sabonete Ursinho Azul",
+    category: "Maternidade",
+    description: `Mini sabonete em formato de ursinho na cor azul, com detalhes em alto-relevo e perfume suave. Ideal para compor lembrancinhas de chá de bebê e maternidade de menino. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: "R$ 2,00 / unidade",
+    image: maternidadeMiniUrsinhoAzul,
+  },
+  {
+    id: "maternidade-mini-dinossauros",
+    name: "Mini Sabonete Dinossauros",
+    category: "Maternidade",
+    description: `Mini sabonete em formato de dinossauros variados em cores pastéis (rosa, verde, azul, amarelo, laranja e branco), com acabamento brilhante e perfume suave. Ideal para compor lembrancinhas no tema dinossauros. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: MINI_PRICE_LOW,
+    image: maternidadeMiniDinossauros,
+  },
+  {
+    id: "maternidade-vela-marcus-augusto",
+    name: "Vela Latinha Personalizada Anjinho",
+    category: "Maternidade",
+    description: "Vela perfumada em latinha de alumínio com rótulo personalizado tema anjinho, nome do bebê e mensagem bíblica (Mateus 5:16). Embalada em celofane com laço de cetim azul. Lembrancinha delicada e simbólica para batizados, chá de bebê e maternidade.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: maternidadeVelaMarcusAugusto,
+    highlight: "Novo",
   },
 ];
 
