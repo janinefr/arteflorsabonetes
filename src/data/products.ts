@@ -42,6 +42,11 @@ import maternidadeCheirinhoLuccaLohan from "@/assets/maternidade-cheirinho-lucca
 import maternidadeMiniUrsinhoAzul from "@/assets/maternidade-mini-ursinho-azul.jpg";
 import maternidadeMiniDinossauros from "@/assets/maternidade-mini-dinossauros.jpg";
 import maternidadeVelaMarcusAugusto from "@/assets/maternidade-vela-marcus-augusto.jpg";
+import maternidadeChaRifaAgatha from "@/assets/maternidade-cha-rifa-agatha.jpg";
+import maternidadeKitCaixinhaAj from "@/assets/maternidade-kit-caixinha-aj.jpg";
+import maternidadeSaboneteMonogramaA from "@/assets/maternidade-sabonete-monograma-a.jpg";
+import maternidadeLetrinhaLRosa from "@/assets/maternidade-letrinha-l-rosa.jpg";
+import maternidadeRBaloes from "@/assets/maternidade-r-baloes.jpg";
 
 export type Product = {
   id: string;
@@ -431,6 +436,56 @@ export const products: Product[] = [
     quantity: "Unidade",
     price: "R$ 6,00 / unidade",
     image: maternidadeVelaMarcusAugusto,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-cha-rifa-agatha",
+    name: "Lembrancinha Chá Rifa Borboleta Personalizada",
+    category: "Maternidade",
+    description: "Lembrancinha de chá rifa com sabonete em formato de borboleta branca e letra personalizada em rosa, embalada em tule com laço de cetim e tag personalizada com nome do bebê. Perfeita para chá de bebê e maternidade temática de menina.",
+    quantity: "Unidade",
+    price: "R$ 3,00 / unidade",
+    image: maternidadeChaRifaAgatha,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-kit-caixinha-aj",
+    name: "Kit Caixinha Acrílica Letrinhas e Coração",
+    category: "Maternidade",
+    description: "Kit lembrancinha em caixinha acrílica transparente contendo sabonetes em formato de letras personalizadas (iniciais do casal/bebê) em rosa pink e coração branco, finalizado com laço de cetim rosa. Ideal para chá de bebê, chá revelação e maternidade.",
+    quantity: "Unidade",
+    price: "R$ 10,00 / unidade",
+    image: maternidadeKitCaixinhaAj,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-sabonete-monograma-a",
+    name: "Sabonete Redondo Monograma Personalizado",
+    category: "Maternidade",
+    description: "Sabonete artesanal redondo branco com monograma personalizado em alto-relevo (inicial do nome) envolto por moldura de folhagens. Acabamento delicado e sofisticado, perfeito como lembrancinha de maternidade, casamento e ocasiões especiais.",
+    quantity: "Unidade",
+    price: "R$ 5,00 / unidade",
+    image: maternidadeSaboneteMonogramaA,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-letrinha-l-rosa",
+    name: "Sabonete Letrinha Personalizada Rosa",
+    category: "Maternidade",
+    description: "Sabonete artesanal em formato de letra quadrada com inicial personalizada em alto-relevo, na cor rosa bebê. Perfumado e delicado, ideal para compor lembrancinhas de chá de bebê e maternidade de menina.",
+    quantity: "Unidade",
+    price: "R$ 8,00 / unidade",
+    image: maternidadeLetrinhaLRosa,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-r-baloes",
+    name: "Mini Sabonete Letrinha e Balão",
+    category: "Maternidade",
+    description: `Mini sabonete em formato de letra personalizada acompanhado de balão de ar quente, disponível nas cores azul, verde e cinza. Lembrancinha fofa e temática para chá de bebê e maternidade. ${MINI_DESC_SUFFIX}`,
+    quantity: MINI_QTY,
+    price: "R$ 2,00 / unidade",
+    image: maternidadeRBaloes,
     highlight: "Novo",
   },
 ];
