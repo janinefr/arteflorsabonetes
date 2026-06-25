@@ -42,6 +42,11 @@ import maternidadeCheirinhoLuccaLohan from "@/assets/maternidade-cheirinho-lucca
 import maternidadeMiniUrsinhoAzul from "@/assets/maternidade-mini-ursinho-azul.jpg";
 import maternidadeMiniDinossauros from "@/assets/maternidade-mini-dinossauros.jpg";
 import maternidadeVelaMarcusAugusto from "@/assets/maternidade-vela-marcus-augusto.jpg";
+import maternidadeChaRifaAgatha from "@/assets/maternidade-cha-rifa-agatha.jpg";
+import maternidadeKitCaixinhaAj from "@/assets/maternidade-kit-caixinha-aj.jpg";
+import maternidadeSaboneteMonogramaA from "@/assets/maternidade-sabonete-monograma-a.jpg";
+import maternidadeLetrinhaLRosa from "@/assets/maternidade-letrinha-l-rosa.jpg";
+import maternidadeRBaloes from "@/assets/maternidade-r-baloes.jpg";
 
 export type Product = {
   id: string;
