@@ -47,6 +47,14 @@ import maternidadeKitCaixinhaAj from "@/assets/maternidade-kit-caixinha-aj.jpg";
 import maternidadeSaboneteMonogramaA from "@/assets/maternidade-sabonete-monograma-a.jpg";
 import maternidadeLetrinhaLRosa from "@/assets/maternidade-letrinha-l-rosa.jpg";
 import maternidadeRBaloes from "@/assets/maternidade-r-baloes.jpg";
+import maternidadeLetrinhasArthur from "@/assets/maternidade-letrinhas-arthur.jpg";
+import maternidadeKoalaAzul from "@/assets/maternidade-koala-azul.jpg";
+import maternidadePequenoPrincipeBruno from "@/assets/maternidade-pequeno-principe-bruno.jpg";
+import maternidadeKitDinoCaetano from "@/assets/maternidade-kit-dino-caetano.jpg";
+import maternidadeUrsinhoRosaBrenda from "@/assets/maternidade-ursinho-rosa-brenda.jpg";
+import maternidadePezinhoRosaLays from "@/assets/maternidade-pezinho-rosa-lays.jpg";
+import maternidadeCaixinhaPauloMiguel from "@/assets/maternidade-caixinha-paulo-miguel.jpg";
+import maternidadeKitDinoLetrinhas from "@/assets/maternidade-kit-dino-letrinhas.jpg";
 
 export type Product = {
   id: string;
@@ -486,6 +494,86 @@ export const products: Product[] = [
     quantity: MINI_QTY,
     price: "R$ 2,00 / unidade",
     image: maternidadeRBaloes,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-letrinhas-arthur",
+    name: "Sabonete Letrinhas Personalizadas Coloridas",
+    category: "Maternidade",
+    description: "Sabonete artesanal em formato de cubo com letra personalizada em alto-relevo, disponível em branco, verde e amarelo. Ideal para compor o nome do bebê em lembrancinhas de chá de bebê, maternidade e batizados.",
+    quantity: "Unidade (letra)",
+    price: "R$ 1,00 / unidade",
+    image: maternidadeLetrinhasArthur,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-koala-azul",
+    name: "Mini Sabonete Coala Azul",
+    category: "Maternidade",
+    description: "Mini sabonete em formato de coala na cor azul com detalhes em amarelo, perfumado e delicado. Perfeito para lembrancinhas de chá de bebê e maternidade de menino no tema safari/animais.",
+    quantity: "Unidade",
+    price: "R$ 4,00 / unidade",
+    image: maternidadeKoalaAzul,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-pequeno-principe-bruno",
+    name: "Lembrancinha Pequeno Príncipe Personalizada",
+    category: "Maternidade",
+    description: "Lembrancinha de maternidade tema Pequeno Príncipe, com sabonete em formato de letra personalizada (inicial do nome do bebê), embalada em celofane com laço de cetim branco e tag temática com nome e mensagem de boas-vindas. Ideal para chá de bebê e maternidade de menino.",
+    quantity: "Unidade",
+    price: "R$ 3,00 / unidade",
+    image: maternidadePequenoPrincipeBruno,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-kit-dino-caetano",
+    name: "Kit Cheguei! Dinossauros Personalizado",
+    category: "Maternidade",
+    description: "Kit lembrancinha de maternidade com sabonetes em formato de dinossauros nas cores verde, amarelo e cinza acompanhados de letrinhas personalizadas (nome do bebê), embalado em tule branco com laço de cetim e tag temática \"Cheguei!\". Perfeito para chá de bebê e maternidade tema dinossauros.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: maternidadeKitDinoCaetano,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-ursinho-rosa-brenda",
+    name: "Lembrancinha Ursinho Rosa Personalizada",
+    category: "Maternidade",
+    description: "Lembrancinha de maternidade com sabonete em formato de ursinho rosa, embalado em tule branco com laço de cetim e tag personalizada com ilustração de ursinho, nome do bebê e mensagem de agradecimento. Ideal para chá de bebê e maternidade de menina.",
+    quantity: "Unidade",
+    price: "R$ 3,50 / unidade",
+    image: maternidadeUrsinhoRosaBrenda,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-pezinho-rosa-lays",
+    name: "Lembrancinha Pézinhos Rosa Floral",
+    category: "Maternidade",
+    description: "Lembrancinha de maternidade com sabonete em formato de par de pézinhos rosa, embalado em tule com laço de cetim branco e tag personalizada com moldura floral, nome do bebê e mensagem de agradecimento. Delicada e sofisticada, ideal para chá de bebê e maternidade de menina.",
+    quantity: "Unidade",
+    price: "R$ 3,00 / unidade",
+    image: maternidadePezinhoRosaLays,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-caixinha-paulo-miguel",
+    name: "Kit Caixinha Acrílica Ursinho e Balão",
+    category: "Maternidade",
+    description: "Kit lembrancinha em caixinha acrílica transparente contendo sabonetes em formato de ursinho branco, letrinha verde personalizada e balão de ar quente cinza, finalizado com laço de cetim dourado e tag personalizada com nome e mensagem. Ideal para chá de bebê, maternidade e batizados sofisticados.",
+    quantity: "Unidade",
+    price: "R$ 10,00 / unidade",
+    image: maternidadeCaixinhaPauloMiguel,
+    highlight: "Novo",
+  },
+  {
+    id: "maternidade-kit-dino-letrinhas",
+    name: "Kit Dinossauros com Letrinhas Personalizadas",
+    category: "Maternidade",
+    description: "Kit lembrancinha com sabonetes em formato de dinossauros coloridos (azul, verde e branco) acompanhados de letrinhas personalizadas (iniciais do nome do bebê), embalado em celofane com laço de cetim verde e tag temática ilustrada com dinossauros filhotes. Perfeito para chá de bebê, chá revelação e maternidade tema dinossauros.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: maternidadeKitDinoLetrinhas,
     highlight: "Novo",
   },
 ];
