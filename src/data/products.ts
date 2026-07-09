@@ -47,6 +47,14 @@ import maternidadeKitCaixinhaAj from "@/assets/maternidade-kit-caixinha-aj.jpg";
 import maternidadeSaboneteMonogramaA from "@/assets/maternidade-sabonete-monograma-a.jpg";
 import maternidadeLetrinhaLRosa from "@/assets/maternidade-letrinha-l-rosa.jpg";
 import maternidadeRBaloes from "@/assets/maternidade-r-baloes.jpg";
+import maternidadeLetrinhasArthur from "@/assets/maternidade-letrinhas-arthur.jpg";
+import maternidadeKoalaAzul from "@/assets/maternidade-koala-azul.jpg";
+import maternidadePequenoPrincipeBruno from "@/assets/maternidade-pequeno-principe-bruno.jpg";
+import maternidadeKitDinoCaetano from "@/assets/maternidade-kit-dino-caetano.jpg";
+import maternidadeUrsinhoRosaBrenda from "@/assets/maternidade-ursinho-rosa-brenda.jpg";
+import maternidadePezinhoRosaLays from "@/assets/maternidade-pezinho-rosa-lays.jpg";
+import maternidadeCaixinhaPauloMiguel from "@/assets/maternidade-caixinha-paulo-miguel.jpg";
+import maternidadeKitDinoLetrinhas from "@/assets/maternidade-kit-dino-letrinhas.jpg";
 
 export type Product = {
   id: string;
