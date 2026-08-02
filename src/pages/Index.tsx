@@ -7,7 +7,7 @@ import { WhatsAppFloating } from "@/components/WhatsAppButton";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Arte Flor Sabonetes — Catálogo de Sabonetes Artesanais";
+    document.title = "Arte Flor Lembranças — Catálogo de Sabonetes Artesanais";
     const desc =
       "Catálogo de sabonetes artesanais Arte Flor: rosas, lavanda, jasmim, kits e lembrancinhas. Peça pelo WhatsApp.";
     let meta = document.querySelector('meta[name="description"]');

@@ -14,7 +14,7 @@ const ProductDetail = () => {
 
   useEffect(() => {
     if (product) {
-      document.title = `${product.name} — Arte Flor Sabonetes`;
+      document.title = `${product.name} — Arte Flor Lembranças`;
       const desc = product.description.slice(0, 155);
       let meta = document.querySelector('meta[name="description"]');
       if (!meta) {
