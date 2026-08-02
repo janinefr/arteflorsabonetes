@@ -10,7 +10,7 @@ export const TopNav = () => (
       </nav>
 
       <Link to="/" className="flex flex-col items-center gap-1">
-        <img src={logo} alt="Arte Flor Sabonetes" className="h-12 w-12 object-contain md:h-14 md:w-14" />
+        <img src={logo} alt="Arte Flor Lembranças" className="h-12 w-12 object-contain md:h-14 md:w-14" />
         <span className="font-serif text-sm italic text-muted-foreground">arte flor</span>
       </Link>
 

@@ -43,7 +43,7 @@ export const Footer = () => (
     </div>
     <div className="border-t border-border/60">
       <div className="container mx-auto px-6 py-5 text-center text-xs uppercase tracking-[0.25em] text-muted-foreground">
-        © {new Date().getFullYear()} Arte Flor Sabonetes
+        © {new Date().getFullYear()} Arte Flor Lembranças
       </div>
     </div>
   </footer>
