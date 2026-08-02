@@ -6,8 +6,8 @@ export const Footer = () => (
   <footer id="contato" className="border-t border-border/60 bg-background">
     <div className="container mx-auto grid gap-10 px-6 py-16 md:grid-cols-3 md:items-start">
       <div className="flex flex-col gap-3">
-        <img src={logo} alt="Arte Flor Sabonetes" className="h-14 w-14 object-contain" />
-        <p className="font-serif text-xl italic text-foreground">Arte Flor Sabonetes</p>
+        <img src={logo} alt="Arte Flor Lembranças" className="h-14 w-14 object-contain" />
+        <p className="font-serif text-xl italic text-foreground">Arte Flor Lembranças</p>
         <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
           Sabonetes artesanais feitos com amor. Faça seu pedido diretamente pelo
           WhatsApp e receba com todo cuidado.
