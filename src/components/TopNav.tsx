@@ -16,7 +16,7 @@ export const TopNav = () => (
 
       <div className="flex items-center justify-end gap-8 text-xs uppercase tracking-[0.25em] text-foreground">
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/arteflorlembrancas?igsh=MTNhaXA3N3c5eXRqZA=="
           target="_blank"
           rel="noopener noreferrer"
           className="hidden transition-opacity hover:opacity-60 sm:inline"

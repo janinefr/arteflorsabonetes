@@ -32,12 +32,12 @@ export const Footer = () => (
           <MessageCircle className="h-4 w-4" /> (83) 98733-4129
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/arteflorlembrancas?igsh=MTNhaXA3N3c5eXRqZA=="
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-foreground transition-opacity hover:opacity-60"
         >
-          <Instagram className="h-4 w-4" /> @arteflorsabonetes
+          <Instagram className="h-4 w-4" /> @arteflorlembrancas
         </a>
       </div>
     </div>
