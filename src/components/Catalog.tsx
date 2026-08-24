@@ -1,5 +1,5 @@
-import { useMemo, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react";
 import { products, Product } from "@/data/products";
 import { ProductCard } from "./ProductCard";
 
@@ -16,14 +16,30 @@ const categories = [
 
 type Category = (typeof categories)[number];
 
+const PER_PAGE = 12;
+
 export const Catalog = () => {
   const [active, setActive] = useState<Category>("Todos");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [page, setPage] = useState(1);
 
   const filtered = useMemo<Product[]>(
     () => (active === "Todos" ? products : products.filter((p) => p.category === active)),
     [active]
   );
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+
+  useEffect(() => {
+    setPage(1);
+  }, [active]);
+
+  const pageItems = filtered.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+
+  const goToPage = (p: number) => {
+    setPage(p);
+    document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const handleSelect = (cat: Category) => {
     setActive(cat);
@@ -88,11 +104,47 @@ export const Catalog = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-x-6 gap-y-12 pt-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {filtered.map((p) => (
+        <div className="grid grid-cols-2 gap-x-4 gap-y-8 pt-10 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {pageItems.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}
         </div>
+
+        {/* Paginação */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-2 pt-12">
+            <button
+              onClick={() => goToPage(Math.max(1, page - 1))}
+              disabled={page === 1}
+              aria-label="Página anterior"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:bg-muted disabled:opacity-40"
+            >
+              <ChevronLeft className="h-4 w-4" />
+            </button>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+              <button
+                key={p}
+                onClick={() => goToPage(p)}
+                aria-current={p === page ? "page" : undefined}
+                className={`h-9 min-w-9 rounded-full px-3 text-xs tracking-widest transition-colors ${
+                  p === page
+                    ? "bg-foreground text-background"
+                    : "border border-border text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {p}
+              </button>
+            ))}
+            <button
+              onClick={() => goToPage(Math.min(totalPages, page + 1))}
+              disabled={page === totalPages}
+              aria-label="Próxima página"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:bg-muted disabled:opacity-40"
+            >
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

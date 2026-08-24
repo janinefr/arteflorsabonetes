@@ -12,7 +12,7 @@ export const ProductCard = ({ product }: Props) => {
 
   return (
     <article className="group flex flex-col">
-      <Link to={href} className="relative block aspect-square overflow-hidden bg-muted">
+      <Link to={href} className="relative block aspect-square overflow-hidden rounded-xl bg-muted">
         <img
           src={product.image}
           alt={product.name}
@@ -38,18 +38,18 @@ export const ProductCard = ({ product }: Props) => {
         </a>
       </Link>
 
-      <div className="flex flex-col gap-1 pt-4">
+      <div className="flex flex-col gap-0.5 pt-3">
         <Link
           to={href}
-          className="font-serif text-lg leading-tight text-foreground transition-colors hover:text-primary"
+          className="font-serif text-base leading-tight text-foreground transition-colors hover:text-primary"
         >
           {product.name}
         </Link>
-        <span className="text-xs uppercase tracking-widest text-muted-foreground">
+        <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
           {product.category}
         </span>
         {product.price && (
-          <span className="pt-1 text-sm text-foreground">{product.price}</span>
+          <span className="pt-0.5 text-xs text-foreground">{product.price}</span>
         )}
       </div>
     </article>
