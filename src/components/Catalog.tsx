@@ -1,5 +1,5 @@
-import { useMemo, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react";
 import { products, Product } from "@/data/products";
 import { ProductCard } from "./ProductCard";
 
@@ -16,14 +16,30 @@ const categories = [
 
 type Category = (typeof categories)[number];
 
+const PER_PAGE = 12;
+
 export const Catalog = () => {
   const [active, setActive] = useState<Category>("Todos");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [page, setPage] = useState(1);
 
   const filtered = useMemo<Product[]>(
     () => (active === "Todos" ? products : products.filter((p) => p.category === active)),
     [active]
   );
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+
+  useEffect(() => {
+    setPage(1);
+  }, [active]);
+
+  const pageItems = filtered.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+
+  const goToPage = (p: number) => {
+    setPage(p);
+    document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const handleSelect = (cat: Category) => {
     setActive(cat);
