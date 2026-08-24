@@ -28,6 +28,9 @@ import velaLembrancinhaAzul from "@/assets/vela-lembrancinha-azul.jpg";
 import velaPavioMadeira from "@/assets/vela-pavio-madeira.jpg";
 import velaEstrelaSejaLuz from "@/assets/vela-estrela-seja-luz.jpg";
 import maternidadePezinhoRosaLetrinha from "@/assets/maternidade-pezinho-rosa-letrinha.jpg";
+import saboneteCoracaoRosasPreciosa from "@/assets/sabonete-coracao-rosas-preciosa.jpg";
+import saboneteFloresLilasBranco from "@/assets/sabonete-flores-lilas-branco.jpg";
+import saboneteCoracoesRosaTule from "@/assets/sabonete-coracoes-rosa-tule.jpg";
 import maternidadeChegueiIsabela from "@/assets/maternidade-cheguei-isabela.jpg";
 import maternidadeChaRevelacaoCoracao from "@/assets/maternidade-cha-revelacao-coracao.jpg";
 import maternidadeUrsinhoPezinhoAntonelly from "@/assets/maternidade-ursinho-pezinho-antonelly.jpg";
@@ -574,6 +577,36 @@ export const products: Product[] = [
     quantity: "Unidade",
     price: "R$ 6,00 / unidade",
     image: maternidadeKitDinoLetrinhas,
+    highlight: "Novo",
+  },
+  {
+    id: "sabonete-coracao-rosas-preciosa",
+    name: "Sabonete Coração com Rosas \"Você é Preciosa\"",
+    category: "Sabonetes",
+    description: "Sabonete artesanal em formato de coração rosa decorado com rosas em relevo, embalado em celofane transparente com flor de cetim e tag \"Você é preciosa, cuide-se bem todos os dias\". Ideal para lembrancinhas, presentes e ações especiais.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: saboneteCoracaoRosasPreciosa,
+    highlight: "Novo",
+  },
+  {
+    id: "sabonete-flores-lilas-branco",
+    name: "Sabonete Flores Lilás e Branco",
+    category: "Sabonetes",
+    description: "Sabonetes artesanais em formatos de flores nas cores lilás e branco perolado, com acabamento delicado e perfume suave. Perfeitos para lembrancinhas, decoração de lavabo e presentes.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: saboneteFloresLilasBranco,
+    highlight: "Novo",
+  },
+  {
+    id: "sabonete-coracoes-rosa-tule",
+    name: "Sabonete Corações Rosa em Tule",
+    category: "Sabonetes",
+    description: "Sabonete artesanal com corações rosa, embalado em tule branco com laço de cetim e florzinha lilás. Uma lembrancinha romântica e delicada para casamentos, chás e datas especiais.",
+    quantity: "Unidade",
+    price: "R$ 8,00 / unidade",
+    image: saboneteCoracoesRosaTule,
     highlight: "Novo",
   },
 ];
