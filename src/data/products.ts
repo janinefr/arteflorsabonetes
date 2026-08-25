@@ -67,6 +67,15 @@ import velaBotaoRosaBranca from "@/assets/vela-botao-rosa-branca.jpg";
 import velaRosaAbertaBranca from "@/assets/vela-rosa-aberta-branca.jpg";
 import velaCuboTercoPersonalizada from "@/assets/vela-cubo-terco-personalizada.jpg";
 import velaCuboCasamentoPersonalizada from "@/assets/vela-cubo-casamento-personalizada.jpg";
+import velaCopoFloresSecasLacoRosa from "@/assets/vela-copo-flores-secas-laco-rosa.jpg";
+import velaLatinhaDiaDasMaesPersonalizada from "@/assets/vela-latinha-dia-das-maes-personalizada.jpg";
+import velaBubbleCubo from "@/assets/vela-bubble-cubo.jpg";
+import velaBubbleSejaLuzCaixinha from "@/assets/vela-bubble-seja-luz-caixinha.jpg";
+import velaPoteCristalMargarida from "@/assets/vela-pote-cristal-margarida.jpg";
+import velaMiniPotinhoFloresVermelhas from "@/assets/vela-mini-potinho-flores-vermelhas.jpg";
+import velaBatizadoOrganzaTerco from "@/assets/vela-batizado-organza-terco.jpg";
+import velaPotinhoSePermitaSonhar from "@/assets/vela-potinho-se-permita-sonhar.jpg";
+import velaBubbleCaixinhaFlorAzul from "@/assets/vela-bubble-caixinha-flor-azul.jpg";
 import maternidadeKitDinoLetrinhas from "@/assets/maternidade-kit-dino-letrinhas.jpg";
 
 export type Product = {
@@ -717,6 +726,96 @@ export const products: Product[] = [
     quantity: "Unidade",
     price: "R$ 5,00 / unidade",
     image: velaCuboCasamentoPersonalizada,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-copo-flores-secas-laco-rosa",
+    name: "Vela Copo com Flores Secas e Laço Rosa",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em copo de vidro transparente decorada com buquê de flores secas em tons de rosa e laço de cetim. Uma peça sofisticada para decoração, presentes e lembrancinhas especiais.",
+    quantity: "Unidade",
+    price: "R$ 35,00 / unidade",
+    image: velaCopoFloresSecasLacoRosa,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-latinha-dia-das-maes-personalizada",
+    name: "Vela Latinha Dia das Mães Personalizada",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em latinha com tampa personalizada com arte floral, nome ou logo da empresa, embalada em celofane com laço de cetim lilás. Perfeita para brindes corporativos e Dia das Mães.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: velaLatinhaDiaDasMaesPersonalizada,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-bubble-cubo",
+    name: "Vela Bubble Cubo",
+    category: "Velas perfumadas",
+    description: "Vela perfumada artesanal em formato bubble (cubo de bolhas), acabamento acetinado e perfume suave. Ideal para decoração moderna, presentes e lembrancinhas.",
+    quantity: "Unidade",
+    price: "R$ 5,00 / unidade",
+    image: velaBubbleCubo,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-bubble-seja-luz-caixinha",
+    name: "Vela Bubble Seja Luz na Caixinha",
+    category: "Velas perfumadas",
+    description: "Vela perfumada bubble com frase \"Seja luz\", embalada em caixinha acrílica transparente com fio rústico e flor seca natural. Lembrancinha delicada para eventos e celebrações.",
+    quantity: "Unidade",
+    price: "R$ 8,00 / unidade",
+    image: velaBubbleSejaLuzCaixinha,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-pote-cristal-margarida",
+    name: "Vela Pote de Cristal com Margarida",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em pote de vidro tipo cristal com tampa trabalhada, laço de cetim lilás e vela em formato de margarida. Uma peça elegante para presentear e decorar.",
+    quantity: "Unidade",
+    price: "R$ 35,00 / unidade",
+    image: velaPoteCristalMargarida,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-mini-potinho-flores-vermelhas",
+    name: "Vela Mini Potinho com Flores Vermelhas",
+    category: "Velas perfumadas",
+    description: "Mini vela perfumada em potinho de vidro com tampa de rolha, laço de cetim branco e flores secas vermelhas. Lembrancinha charmosa para casamentos e datas românticas.",
+    quantity: "Unidade",
+    price: "R$ 15,00 / unidade",
+    image: velaMiniPotinhoFloresVermelhas,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-batizado-organza-terco",
+    name: "Vela Batizado Personalizada com Terço",
+    category: "Velas perfumadas",
+    description: "Vela perfumada com arte personalizada de batizado, embalada em saquinho de organza branco com terço de pérolas e pingente de cruz dourado. Lembrancinha religiosa completa e delicada.",
+    quantity: "Unidade",
+    price: "R$ 10,00 / unidade",
+    image: velaBatizadoOrganzaTerco,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-potinho-se-permita-sonhar",
+    name: "Vela Potinho Se Permita Sonhar com Fósforos",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em potinho de vidro com tampa de rolha, frase \"Se permita sonhar\" e laço de cetim branco, acompanhada de vidrinho com fósforos. Kit presente encantador.",
+    quantity: "Unidade",
+    price: "R$ 15,00 / unidade",
+    image: velaPotinhoSePermitaSonhar,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-bubble-caixinha-flor-azul",
+    name: "Vela Bubble na Caixinha com Flor Azul",
+    category: "Velas perfumadas",
+    description: "Vela perfumada bubble embalada em caixinha acrílica transparente, amarrada com fio rústico e flores secas azuis. Lembrancinha moderna para chá de bebê, casamento e eventos.",
+    quantity: "Unidade",
+    price: "R$ 8,00 / unidade",
+    image: velaBubbleCaixinhaFlorAzul,
     highlight: "Novo",
   },
 ];
