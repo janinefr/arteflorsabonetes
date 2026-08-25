@@ -723,7 +723,7 @@ export const products: Product[] = [
 
 
 
-export const WHATSAPP_NUMBER = "5583987334129";
+export const WHATSAPP_NUMBER = "558396829179";
 
 export function whatsappLink(message?: string) {
   const base = `https://api.whatsapp.com/send/?phone=%2B${WHATSAPP_NUMBER}&type=phone_number&app_absent=0&utm_source=ig`;
