@@ -57,6 +57,16 @@ import maternidadeKitDinoCaetano from "@/assets/maternidade-kit-dino-caetano.jpg
 import maternidadeUrsinhoRosaBrenda from "@/assets/maternidade-ursinho-rosa-brenda.jpg";
 import maternidadePezinhoRosaLays from "@/assets/maternidade-pezinho-rosa-lays.jpg";
 import maternidadeCaixinhaPauloMiguel from "@/assets/maternidade-caixinha-paulo-miguel.jpg";
+import velaPotinhoLavandaPersonalizada from "@/assets/vela-potinho-lavanda-personalizada.jpg";
+import velaPotinhoEstrelaPersonalizada from "@/assets/vela-potinho-estrela-personalizada.jpg";
+import velaCopoEspalheAmor from "@/assets/vela-copo-espalhe-amor.jpg";
+import velaLatinhaDiaDasMaes from "@/assets/vela-latinha-dia-das-maes.jpg";
+import velaLatinhaBatizadoTerco from "@/assets/vela-latinha-batizado-terco.jpg";
+import velaMargaridaOrganzaMateus from "@/assets/vela-margarida-organza-mateus.jpg";
+import velaBotaoRosaBranca from "@/assets/vela-botao-rosa-branca.jpg";
+import velaRosaAbertaBranca from "@/assets/vela-rosa-aberta-branca.jpg";
+import velaCuboTercoPersonalizada from "@/assets/vela-cubo-terco-personalizada.jpg";
+import velaCuboCasamentoPersonalizada from "@/assets/vela-cubo-casamento-personalizada.jpg";
 import maternidadeKitDinoLetrinhas from "@/assets/maternidade-kit-dino-letrinhas.jpg";
 
 export type Product = {
@@ -607,6 +617,106 @@ export const products: Product[] = [
     quantity: "Unidade",
     price: "R$ 8,00 / unidade",
     image: saboneteCoracoesRosaTule,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-potinho-lavanda-personalizada",
+    name: "Vela Potinho Lavanda Personalizada",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em potinho de vidro com tampa de rolha, rótulo personalizado com nome, idade e data, arte floral de lavanda e laço de cetim lilás. Lembrancinha elegante para aniversários, bodas e comemorações especiais.",
+    quantity: "Unidade",
+    price: "R$ 15,00 / unidade",
+    image: velaPotinhoLavandaPersonalizada,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-potinho-estrela-personalizada",
+    name: "Vela Potinho Estrela Personalizada",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em potinho de vidro em formato de estrela com tampa de rolha, nome e data personalizados, laço de cetim branco com rosinha e tule. Perfeita para chá de bebê, batizado e casamento.",
+    quantity: "Unidade",
+    price: "R$ 16,00 / unidade",
+    image: velaPotinhoEstrelaPersonalizada,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-copo-espalhe-amor",
+    name: "Vela Copo Espalhe Amor",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em copo de vidro com frase \"Espalhe amor por onde você for\" e corações em rosa. Presente delicado e afetivo para amigas, madrinhas e datas comemorativas.",
+    quantity: "Unidade",
+    price: "R$ 12,00 / unidade",
+    image: velaCopoEspalheAmor,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-latinha-dia-das-maes",
+    name: "Vela Latinha Feliz Dia das Mães",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em latinha com tampa personalizada \"Feliz Dia das Mães\", arte floral em tons de rosa, coração decorativo e laço de cetim vermelho. Lembrancinha ideal para o Dia das Mães.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: velaLatinhaDiaDasMaes,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-latinha-batizado-terco",
+    name: "Vela Latinha Batizado com Terço",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em latinha com tampa personalizada de batizado, embalada em saquinho de organza com terço de dezena dourado. Lembrancinha religiosa sofisticada para batizados e primeira comunhão.",
+    quantity: "Unidade",
+    price: "R$ 10,00 / unidade",
+    image: velaLatinhaBatizadoTerco,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-margarida-organza-mateus",
+    name: "Vela Margarida em Organza com Tag Mateus 5:16",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em formato de margarida, embalada em saquinho de organza branco com fita e tag personalizada com o versículo Mateus 5:16. Perfeita para eventos religiosos e lembrancinhas de igreja.",
+    quantity: "Unidade",
+    price: "R$ 8,00 / unidade",
+    image: velaMargaridaOrganzaMateus,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-botao-rosa-branca",
+    name: "Vela Botão de Rosa Branca",
+    category: "Velas perfumadas",
+    description: "Vela perfumada artesanal em formato de botão de rosa branca, com acabamento delicado e perfume suave. Ideal para decoração romântica, casamentos e presentes.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: velaBotaoRosaBranca,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-rosa-aberta-branca",
+    name: "Vela Rosa Aberta Branca",
+    category: "Velas perfumadas",
+    description: "Vela perfumada artesanal em formato de rosa aberta na cor branca perolada. Uma peça charmosa para decoração de mesa, lembrancinhas e presentes.",
+    quantity: "Unidade",
+    price: "R$ 6,00 / unidade",
+    image: velaRosaAbertaBranca,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-cubo-terco-personalizada",
+    name: "Vela Cubo Personalizada com Terço",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em formato de cubo com arte personalizada (nome, idade e Oração do Pai Nosso), embalada em organza com fio rústico, terço de pérolas e pingente de cruz. Lembrancinha religiosa completa.",
+    quantity: "Unidade",
+    price: "R$ 10,00 / unidade",
+    image: velaCuboTercoPersonalizada,
+    highlight: "Novo",
+  },
+  {
+    id: "vela-cubo-casamento-personalizada",
+    name: "Vela Cubo Casamento Personalizada",
+    category: "Velas perfumadas",
+    description: "Vela perfumada em formato de cubo com arte personalizada dos noivos e Oração do Pai Nosso em tons dourados. Lembrancinha refinada para casamentos e bodas.",
+    quantity: "Unidade",
+    price: "R$ 5,00 / unidade",
+    image: velaCuboCasamentoPersonalizada,
     highlight: "Novo",
   },
 ];
