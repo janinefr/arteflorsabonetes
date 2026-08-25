@@ -29,7 +29,7 @@ export const Footer = () => (
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-foreground transition-opacity hover:opacity-60"
         >
-          <MessageCircle className="h-4 w-4" /> (83) 98733-4129
+          <MessageCircle className="h-4 w-4" /> (83) 9682-9179
         </a>
         <a
           href="https://www.instagram.com/arteflorlembrancas?igsh=MTNhaXA3N3c5eXRqZA=="
